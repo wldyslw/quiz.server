@@ -1,0 +1,12 @@
+# Editor config folder
+.vscode
+
+# DB files
+db/*.sqlite3
+db/*.sqlite3-journal
+
+# Logfiles and tempfiles.
+/log/*
+/tmp/*
+!/log/.keep
+!/tmp/.keep
