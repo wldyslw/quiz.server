@@ -11,5 +11,6 @@ set :database, 'sqlite3:db/quiz.server.sqlite3'
 
 get '/getall' do
   all = Question.joins(:answers).group(:id)
-  JSON.generate all.to_a
+  headers 'Content-Type' => 'application/json;encoding=utf-8'
+  body JSON.generate all.to_a
 end
