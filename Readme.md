@@ -7,7 +7,7 @@ Simple server with predefined data based on [Sinatra](http://sinatrarb.com/) and
 ```sh
 gem i
 rake db:migrate
-rake db:seeds # Before running this you can populate db/seeds.yml with any quiestions you want
+rake db:seeds # Before running this you can populate db/seeds.yml with any questions you want
 ruby app.rb
 ```
 
