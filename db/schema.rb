@@ -14,6 +14,7 @@ ActiveRecord::Schema.define(version: 2019_12_12_152356) do
 
   create_table "answers", force: :cascade do |t|
     t.string "text"
+    t.boolean "is_correct", default: false
     t.integer "question_id"
     t.index ["question_id"], name: "index_answers_on_question_id"
   end
